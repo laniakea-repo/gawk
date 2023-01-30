@@ -2,7 +2,7 @@
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=gawk
-pkgver=5.1.1
+pkgver=5.2.1
 pkgrel=1
 pkgdesc="GNU version of awk"
 arch=('x86_64')
@@ -13,8 +13,8 @@ depends=('sh' 'glibc' 'mpfr')
 provides=('awk')
 source=(https://ftp.gnu.org/pub/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz{,.sig})
 validpgpkeys=('D1967C63788713177D861ED7DF597815937EC0D2') # Arnold Robbins
-md5sums=('f4aa3fe2dd802cc625c5120a6148e91b'
-         'SKIP')
+sha256sums=('529e7c8c6acf21ff3a6183f4d763c632810908989c24675c77995d51ac37b79c'
+            'SKIP')
 
 build() {
   cd ${pkgname}-${pkgver}
